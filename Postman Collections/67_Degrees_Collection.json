@@ -2218,34 +2218,14 @@
                 "header": [],
                 "body": {
                   "mode": "raw",
-                  "raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ns1=\"http://webservices.hpi.co.uk/SupplementaryEnquiryV1\">\n    <SOAP-ENV:Body>\n        <ns1:ParameterizedEnquiryRequest>\n            <ns1:Authentication>\n                <ns1:ServiceVersion>\n                    <ns1:MajorVersion>0</ns1:MajorVersion>\n                    <ns1:MinorVersion>0</ns1:MinorVersion>\n                </ns1:ServiceVersion>\n                <ns1:SubscriberDetails>\n                    <ns1:CustomerCode>0601448</ns1:CustomerCode>\n                    <ns1:Initials>ABC</ns1:Initials>\n                    <ns1:Password>T3ST0919</ns1:Password>\n                </ns1:SubscriberDetails>\n            </ns1:Authentication>\n            <ns1:ParameterizedRequest>\n                <ns1:Asset>\n                    <ns1:Vrm>Y802HGX</ns1:Vrm>\n                </ns1:Asset>\n                <ns1:ParameterList>\n                    <ns1:Parameter>\n                        <ns1:Name>PDF_EMAIL_ADDRESS</ns1:Name>\n                        <ns1:Value>noreply@67degrees.co.uk</ns1:Value>\n                    </ns1:Parameter>\n                </ns1:ParameterList>\n                <ns1:PrimaryProduct>\n                    <ns1:Code>HPI64</ns1:Code>\n                </ns1:PrimaryProduct>\n                <ns1:SupplementaryProduct>\n                    <ns1:Code>ADSMT</ns1:Code>\n                </ns1:SupplementaryProduct>\n                <ns1:SupplementaryProduct>\n                    <ns1:Code>AVX02</ns1:Code>\n                </ns1:SupplementaryProduct>\n                <ns1:SupplementaryProduct>\n                    <ns1:Code>CAPCD</ns1:Code>\n                </ns1:SupplementaryProduct>\n                <ns1:SupplementaryProduct>\n                    <ns1:Code>HPIM1</ns1:Code>\n                </ns1:SupplementaryProduct>\n            </ns1:ParameterizedRequest>\n        </ns1:ParameterizedEnquiryRequest>\n    </SOAP-ENV:Body>\n</SOAP-ENV:Envelope>",
+                  "raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:sup=\"http://webservices.hpi.co.uk/SupplementaryEnquiryV1\">\n   <soapenv:Header/>\n   <soapenv:Body>\n      <sup:ParameterizedEnquiryRequest xmlns=\"http://pat-wss.hpi.co.uk/TradeSoap/services/SupplementaryEnquiryV1?wsdl\">\n         <sup:Authentication>\n            <!--Optional:-->\n            <sup:ServiceVersion>\n               <sup:MajorVersion>1</sup:MajorVersion>\n               <sup:MinorVersion>16</sup:MinorVersion>\n               <!--You may enter ANY elements at this point-->\n            </sup:ServiceVersion>\n            <sup:SubscriberDetails>\n               <sup:CustomerCode>8733000</sup:CustomerCode>\n               <sup:Initials>ABC</sup:Initials>\n               <sup:Password>CAPTAIN</sup:Password>\n               <!--You may enter ANY elements at this point-->\n            </sup:SubscriberDetails>\n            <!--You may enter ANY elements at this point-->\n         </sup:Authentication>\n         <sup:ParameterizedRequest>\n            <sup:Asset>\n               <!--Optional:-->\n               <sup:Vrm>Y802HGX</sup:Vrm>\n               <!--Optional:-->\n               <!--sup:Vin>?</sup:Vin-->\n               <!--Optional:-->\n               <sup:Mileage>0</sup:Mileage>\n               <!--Optional:-->\n               <sup:Reference>?</sup:Reference>\n            </sup:Asset>\n            <sup:ParameterList>\n               <!--Zero or more repetitions:-->\n               <sup:Parameter>\n                  <sup:Name>?</sup:Name>\n                  <sup:Value>?</sup:Value>\n               </sup:Parameter>\n            </sup:ParameterList>\n            <sup:PrimaryProduct>\n               <sup:Code>HPI64</sup:Code>\n               <!--You may enter ANY elements at this point-->\n            </sup:PrimaryProduct>\n            <!--Zero or more repetitions:-->\n            <sup:SupplementaryProduct>\n               <sup:Code>ADSMT</sup:Code>\n               <!--You may enter ANY elements at this point-->\n            </sup:SupplementaryProduct>\n         </sup:ParameterizedRequest>\n      </sup:ParameterizedEnquiryRequest>\n   </soapenv:Body>\n</soapenv:Envelope>",
                   "options": {
                     "raw": {
                       "language": "xml"
                     }
                   }
                 },
-                "url": {
-                  "raw": "http://pat-wss.hpi.co.uk/TradeSoap/services/SupplementaryEnquiryV1?wsdl",
-                  "protocol": "http",
-                  "host": [
-                    "pat-wss",
-                    "hpi",
-                    "co",
-                    "uk"
-                  ],
-                  "path": [
-                    "TradeSoap",
-                    "services",
-                    "SupplementaryEnquiryV1"
-                  ],
-                  "query": [
-                    {
-                      "key": "wsdl",
-                      "value": null
-                    }
-                  ]
-                }
+                "url": "http://pat-wss.hpi.co.uk/TradeSoap/services/SupplementaryEnquiryV1"
               },
               "response": []
             }
@@ -3209,7 +3189,7 @@
   ],
   "variable": [
     {
-      "id": "31d53870-0532-4058-900e-5a1cf140caea",
+      "id": "cb75c5ec-54f5-4d92-a534-5be434a8b575",
       "key": "x-user-token",
       "value": "CCB194E8-B80A-EBA2-F87E-DD081FEA70C4"
     }
