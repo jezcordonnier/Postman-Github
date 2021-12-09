@@ -1066,6 +1066,109 @@
               "response": []
             },
             {
+              "name": "Get Vehicle Copy",
+              "id": "407e87be-7ee7-40bc-93d5-41d7903ce6ee",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "api-token",
+                    "value": "bdf7c16a-653d-430b-a70f-1961ec3516c3",
+                    "description": "Static API  access token",
+                    "type": "text",
+                    "disabled": true
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "x-user-token",
+                    "value": "CCB194E8-B80A-EBA2-F87E-DD081FEA70C4",
+                    "type": "text",
+                    "disabled": true
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "http://api.67degrees.local/v1/vehicles?expand=make%2Cmodel%2CvehicleFeatures%2Cmedia%2Cvideos%2CvehicleSpecificationEngine%2CvehicleSpecificationBody%2CvehicleColours%2CvehicleSpecificationCargo%2CvehicleBody%2CvehicleType%2CvehicleTags%2CvehicleCategories%2CvehicleSpecificationOrders%2CbranchSpecificationOrders&Vehicle%5Bstock_id%5D=2&Vehicle%5Badvertise%5D=1&Vehicle%5Bextras%5D=1&Vehicle%5BshowBothConditions%5D=1&Vehicle%5Bbranch_id%5D%5B0%5D=803&Vehicle%5Bbranch_id%5D%5B1%5D=802&per-page=1&es=1\n",
+                  "protocol": "http",
+                  "host": [
+                    "api",
+                    "67degrees",
+                    "local"
+                  ],
+                  "path": [
+                    "v1",
+                    "vehicles"
+                  ],
+                  "query": [
+                    {
+                      "key": "expand",
+                      "value": "make%2Cmodel%2CvehicleFeatures%2Cmedia%2Cvideos%2CvehicleSpecificationEngine%2CvehicleSpecificationBody%2CvehicleColours%2CvehicleSpecificationCargo%2CvehicleBody%2CvehicleType%2CvehicleTags%2CvehicleCategories%2CvehicleSpecificationOrders%2CbranchSpecificationOrders"
+                    },
+                    {
+                      "key": "Vehicle%5Bstock_id%5D",
+                      "value": "2"
+                    },
+                    {
+                      "key": "Vehicle%5Badvertise%5D",
+                      "value": "1"
+                    },
+                    {
+                      "key": "Vehicle%5Bextras%5D",
+                      "value": "1"
+                    },
+                    {
+                      "key": "Vehicle%5BshowBothConditions%5D",
+                      "value": "1"
+                    },
+                    {
+                      "key": "Vehicle%5Bbranch_id%5D%5B0%5D",
+                      "value": "803"
+                    },
+                    {
+                      "key": "Vehicle%5Bbranch_id%5D%5B1%5D",
+                      "value": "802"
+                    },
+                    {
+                      "key": "per-page",
+                      "value": "1"
+                    },
+                    {
+                      "key": "es",
+                      "value": "1\n"
+                    },
+                    {
+                      "key": "Ve",
+                      "value": "",
+                      "disabled": true
+                    },
+                    {
+                      "key": "dealer_id",
+                      "value": "1001",
+                      "description": "Dealer (Muller Group)",
+                      "disabled": true
+                    },
+                    {
+                      "key": "user",
+                      "value": "115",
+                      "description": "Magma",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
               "name": "CAP Code Lookup",
               "id": "6afed931-46e8-4beb-a560-343a611ed0b4",
               "protocolProfileBehavior": {
@@ -3189,7 +3292,7 @@
   ],
   "variable": [
     {
-      "id": "1ff227ca-4e99-412a-a06d-c9c3ac5dd290",
+      "id": "ef588085-9c90-40d4-ad30-28dabf3bc68c",
       "key": "x-user-token",
       "value": "CCB194E8-B80A-EBA2-F87E-DD081FEA70C4"
     }
